@@ -62,9 +62,7 @@ local.properties
 .scala_dependencies
 .worksheet
 
-# Uncomment this line if you wish to ignore the project description file.
-# Typically, this file would be tracked if it contains build/dependency configurations:
-#.project
+
 
 ### Eclipse Patch ###
 # Spring Boot Tooling
@@ -122,10 +120,14 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#Eclipse Core
+# End of https://www.toptal.com/developers/gitignore/api/windows,eclipse,java
+
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+#.project
+
+#Eclipse core
 .project
 
 #JDT-specific(Eclipse Java Development Tools)
 .classpath
-
-# End of https://www.toptal.com/developers/gitignore/api/windows,eclipse,java
