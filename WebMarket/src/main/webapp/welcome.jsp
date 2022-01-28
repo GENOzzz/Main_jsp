@@ -26,9 +26,7 @@
 		<div class="text-center">
 			<h3>
 				<%=tagline %>
-				이번엔 제에에에발 되라ㅏㅏㅏㅏ
-				이제 산을 오르기 시작 하였소...
-				반대로 보내보자
+				집에서도 잘 열리기를...
 			</h3>
 			<%
 				Date day = new Date();
