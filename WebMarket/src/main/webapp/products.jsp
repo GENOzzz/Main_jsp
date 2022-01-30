@@ -24,7 +24,6 @@
 		<div class="container">
 			<h1 class="display-3">상품 목록</h1>
 		</div>
-		<input class="search container"/>  <button>검색</button>
 	</div>
 	<%
 		ArrayList<Product> listOfProducts= productDAO.getAllProducts();

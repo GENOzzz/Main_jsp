@@ -5,9 +5,43 @@
 <head>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+.pImg {
+	width : 270;
+	height : 200;
+	backgroun-size:cover;
+}
+</style>
 <title>상품 상세 정보</title>
 </head>
 <body>
-
+	<jsp:include page="menu.jsp"/>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="display-3">상품 정보</h1>
+		</div>
+	</div>
+	<%
+		String id=request.getParameter("id");
+		Product product = productDAO.getProductById(id);
+	%>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img class="pImg" src="<%=product.getImglink() %>"/>
+				<h3><%= product.getPname() %></h3>
+				<p><%=product.getDescription() %>
+				<p> <b>상품 코드 : </b><span class="badge badge-danger">
+					<%=product.getProductId() %></span>
+					<b>제조사</b> : <%=product.getManufacturer() %>
+					<b>분류</b> : <%=product.getCategory() %>
+					<b>재고 수</b> : <%=product.getUnitsInStock() %>
+					<h4><%=product.getUnitPrice() %>원</h4>
+					<p><a href="#" class="btn btn-info"> 상품 주문 &raquo;</a>
+					<a href="./products.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>
+			</div>
+		</div>
+	</div>
+	
 </body>
 </html>

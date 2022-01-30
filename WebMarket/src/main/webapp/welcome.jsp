@@ -26,10 +26,10 @@
 		<div class="text-center">
 			<h3>
 				<%=tagline %>
-				집에서도 잘 열리기를...
 			</h3>
-			<%
-				Date day = new Date();
+			<%	
+				response.setIntHeader("Refresh",5);
+				Date day = new java.util.Date();
 				String am_pm;
 				int hour=day.getHours();
 				int minute=day.getMinutes();
