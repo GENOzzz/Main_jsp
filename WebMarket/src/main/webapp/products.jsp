@@ -6,7 +6,7 @@
 <html>
 <head>
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	href="./css/bootstrap.min.css">
 <title>상품 목록</title>
 <style>
 .pImg {
@@ -39,7 +39,7 @@
 			%>
 			<div class="col-md-4">
 				<h3><%= product.getPname() %></h3>
-				<img class="pImg" src="<%=product.getImglink() %>"/>
+				<img class="pImg" src="./images/<%=product.getFilename() %>"/>
 				<p><%= product.getDescription() %></p>
 				<p><%= product.getUnitPrice() %>원 </p>
 				<p>

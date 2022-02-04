@@ -14,14 +14,23 @@ public class Product implements Serializable {
    private String category; //분류
    private long unitsInStock; //재고 수
    private String condition; // 신상품, 중고품, 재생품
-   private String imglink; //이미지 링크
+   private String filename; //이미지 파일명
    
 
-public Product() { //기본생성자 
-      super();
-   }
-
    
+   public Product() { //기본생성자 
+	      super();
+	   }
+   
+	public String getFilename() {
+		return filename;
+	}
+	
+	
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+
    public Product(String productId, String pname, Integer unitPrice) { //생성자 
       this.productId = productId;
       this.pname = pname;
@@ -29,13 +38,6 @@ public Product() { //기본생성자
    }
 
    
-   public String getImglink() {
-		return imglink;
-	}
-
-	public void setImglink(String imglink) {
-		this.imglink = imglink;
-	}
 	
    public String getProductId() {
       return productId;
