@@ -2,6 +2,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="dto.Product" %>
 <%@ page import="dao.ProductRepository" %>
+<Context docBase="c:\upload" path="imgpath/" reloadable="true" ></Context>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session"/>
 <html>
 <head>
@@ -39,7 +40,7 @@
 			%>
 			<div class="col-md-4">
 				<h3><%= product.getPname() %></h3>
-				<img class="pImg" src="./images/<%=product.getFilename() %>"/>
+				<img class="pImg" src="/imgpath/<%=product.getFilename()%>"/>
 				<p><%= product.getDescription() %></p>
 				<p><%= product.getUnitPrice() %>원 </p>
 				<p>

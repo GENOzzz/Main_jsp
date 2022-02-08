@@ -9,7 +9,7 @@
 	request.setCharacterEncoding("UTF-8");
 
 	String filename = "";
-	String realFolder ="C:/Users/user-01/geno/Main_jsp/WebMarket/src/main/webapp/images";//이미지 절대경로
+	String realFolder ="c:/upload";//저장될 이미지 절대경로
 	int maxSize = 5*1024*1024;//최대 업로드 될 파일의 크기 5mb
 	String encType= "utf-8";//인코딩 유형
 	

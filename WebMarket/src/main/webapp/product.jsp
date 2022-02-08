@@ -30,7 +30,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img class="pImg" src="./images/<%=product.getFilename() %>"/>
+				<img class="pImg" src="/imgpath/<%=product.getFilename() %>"/>
 				<h3><%= product.getPname() %></h3>
 				<p><%=product.getDescription() %>
 				<p> <b>상품 코드 : </b><span class="badge badge-danger">
