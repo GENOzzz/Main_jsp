@@ -14,7 +14,8 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
---><web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+-->
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 
   <!-- ======================== Introduction ============================== -->
   <!-- This document defines default values for *all* web applications      -->
@@ -29,6 +30,10 @@
 
   <!-- ================== Built In Servlet Definitions ==================== -->
 
+
+<security-role><role-name>role1</role-name></security-role>
+<security-constraint><web-resource-collection><web-resource-name>Main_jsp</web-resource-name><uri-pattern>/CH10/scurity.jsp</uri-pattern><http-method>GET</http-method></web-resource-collection><auth-constraint><description></description><role-name>role1</role-name></auth-constraint></security-constraint>
+<login-config><auth-method>BASIC</auth-method></login-config>
 
   <!-- The default servlet for all web applications, that serves static     -->
   <!-- resources.  It processes all requests that are not mapped to other   -->
