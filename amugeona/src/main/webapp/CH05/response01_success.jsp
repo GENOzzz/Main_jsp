@@ -12,5 +12,6 @@
 	%>
 	<p>아이디 : <% out.println(userid); %>
 	<p>비밀번호 : <% out.println(password); %>
+	
 </body>
 </html>

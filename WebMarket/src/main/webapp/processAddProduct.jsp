@@ -12,9 +12,9 @@
 	String realFolder ="c:/upload";//저장될 이미지 절대경로
 	int maxSize = 5*1024*1024;//최대 업로드 될 파일의 크기 5mb
 	String encType= "utf-8";//인코딩 유형
+	DefaultFileRenamePolicy policy = new DefaultFileRenamePolicy();
 	
-	MultipartRequest multi = new MultipartRequest(request,realFolder,
-	maxSize,encType,new DefaultFileRenamePolicy());
+	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, policy);
 
 
 	String productId = multi.getParameter("productId");

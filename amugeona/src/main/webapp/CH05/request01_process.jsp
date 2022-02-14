@@ -28,5 +28,6 @@
 	서버이름 : <%=request.getServerName() %><br>
 	서버 포트 : <%=request.getServerPort() %><br>
 	쿼리문 : <%=request.getQueryString() %><br>
+	
 </body>
 </html>
