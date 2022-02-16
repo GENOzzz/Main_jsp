@@ -4,7 +4,7 @@
 <html>
 <head>
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	href="./css/bootstrap.min.css">
 <meta charset="EUC-KR">
 <title>Welcome</title>
 </head>

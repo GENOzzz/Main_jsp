@@ -15,7 +15,7 @@
 	DefaultFileRenamePolicy policy = new DefaultFileRenamePolicy();
 	
 	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, policy);
-
+	//서버 버전이 달라 발생하는 문제/서버를 새로 설정하니 해결됨.>>집에서 풀하고 집에 구동되는 톰캣 서버 경로를 git밖에 빼볼것.
 
 	String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
