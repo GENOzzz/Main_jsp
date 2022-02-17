@@ -5,7 +5,6 @@
 <head>
 <link rel="stylesheet"
 	href="./css/bootstrap.min.css">
-<meta charset="EUC-KR">
 <title>Welcome</title>
 </head>
 <body>
